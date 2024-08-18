@@ -7,10 +7,16 @@ const game = {
 
   
   play: function () {
+    do{
+     this.smallestNum = parseInt(prompt('Enter the smallest number in the range:'));
+    } while (isNaN(this.smallestNum));
+    do {  
+      this.biggestNum = parseInt(prompt('Enter the biggest number in the range:'));
+    } while (isNaN(this.biggestNum) || this.biggestNum <= this.smallestNum);
+     this.enableGuessing();
     this.secretNum =
       Math.floor(Math.random() * (this.biggestNum - this.smallestNum + 1)) +
       this.smallestNum;
-     this.enableGuessing();
   },
 
   guessHandler: function () {

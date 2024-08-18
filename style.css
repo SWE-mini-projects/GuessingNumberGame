@@ -1,4 +1,50 @@
-html {
-  height: 100%;
-  width: 100%;
+/* General page style */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+/* Headings */
+h1 {
+    color: #00f; /* Blue color */
+}
+
+/* Buttons */
+button {
+    background-color: #00f; /* Blue background */
+    color: #fff; /* White text */
+    border: 2px solid #fff; /* White border */
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #fff; /* White background on hover */
+    color: #00f; /* Blue text on hover */
+    border: 2px solid #00f; /* Blue border on hover */
+}
+
+/* Messages */
+#messages {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #00f; /* Blue color for messages */
+}
+
+/* Guess Again button */
+#guessAgain {
+    display: none; /* Hide the Guess Again button initially */
+    margin-top: 10px;
+}
+
+/* Additional styling for focus and active states */
+button:focus, button:active {
+    outline: none;
+    box-shadow: 0 0 5px #00f;
 }
